@@ -1,0 +1,63 @@
+Git projectni boshlash
+git init
+
+Fayllar holati
+git status 
+
+Bitta fayl
+git add index.js
+Hammasi
+git add .
+
+💾 Commit qilish
+git commit -m "Initial commit"
+
+🌍 Remote (GitHub)
+Remote ulash
+git remote add origin https://github.com/username/repo.git
+
+Remote tekshirish
+git remote -v
+
+
+⬆️ Push / ⬇️ Pull
+Birinchi push
+git push -u origin main
+-u - buni birmatra yozib kiritib yuborsa git pull git push qilib ketaversa boladi branchni yozmasdan
+Keyingi push
+git push
+
+Pull
+git pull
+
+🕒 History
+Commitlar tarixi
+git log
+
+
+Qisqa:
+
+git log --oneline
+
+
+
+🔧 git commit --amend nima qiladi?
+
+Oxirgi commitni o‘chirib
+
+O‘rniga yangisini yaratadi
+
+Commit ID (hash) o‘zgaradi
+
+📌 Qachon ishlatiladi?
+
+1️⃣ Commit message xato bo‘lsa
+2️⃣ Biror fayl qo‘shishni unutgan bo‘lsang
+3️⃣ Kichkina o‘zgarishlarni alohida commit qilmaslik uchun
+
+
+git reset --hard
+oxirgi commitni tiklaydi yangi kodlar o'chadi
+
+git branch -M master  
+bu branchni githubga ozgartirib yubormoqchi bolsak local branchname orniga
