@@ -1,8 +1,19 @@
 console.log("Express ishga tushdi");
 
 const express = require("express");
+const fs = require("fs");
 const http = require("http");
 const app = express();
+
+let user;
+fs.readFile("database/user.json", "utf-8", (err, data) => {
+  if (err) {
+    console.log("ERROR", err);
+  } else {
+    user = JSON.parse(data);
+  }
+});
+
 //Middleware — bu Express’da 👉 request (so‘rov) bilan response (javob) orasida ishlaydigan funksiya.
 //1: Kirish code
 //Statik fayllarni (o‘zgarmaydigan fayllar) brauzerga berish uchun middleware
@@ -27,10 +38,11 @@ app.set("view engine", "ejs");
 
 app.post("/create-item", function (req, res) {
   console.log(req.body);
-  res.json({value:req.body.item})
-  
+  res.json({ value: req.body.item });
 });
-
+app.get("/author", function (req, res) {
+  res.render("author",{user:user});
+});
 app.get("/", function (req, res) {
   res.render("harid");
 });

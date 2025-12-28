@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Author page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./main.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="frame">
+      <div class="main_frame">
+        <div class="left_frame">
+          <div class="left_1">
+            <div class="left_1_1">
+              <img
+                src="./images/profile.png"
+                width="156px"
+                height="142px"
+                alt="profile"
+              />
+            </div>
+            <div class="left_1_2"><%=user.name%></div>
+            <div class="left_1_3"><%=user.profession%></div>
+            <div class="left_icons">
+              <a href="#" class="link_href">
+                <div class="icon">
+                  <img src="./icon/facebook.svg" class="icon_1" alt="" />
+                </div>
+              </a>
+              <a href="#" class="link_href">
+                <div class="icon">
+                  <img src="./icon/instagram.svg" class="icon_2" alt="" />
+                </div>
+              </a>
+              <a href="#" class="link_href">
+                <div class="icon">
+                  <img src="./icon/twitter.svg" class="icon_3" alt="" />
+                </div>
+              </a>
+              <a href="#" class="link_href">
+                <div class="icon">
+                  <img src="./icon/linkedin.svg" class="icon_4" alt="" />
+                </div>
+              </a>
+              <a href="#" class="link_href">
+                <div class="icon">
+                  <img src="./icon/youtube.svg" class="icon_5" alt="" />
+                </div>
+              </a>
+              <a href="#" class="link_href">
+                <div class="icon">
+                  <img src="./icon/dribbble.svg" class="icon_6" alt="" />
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="marginer"></div>
+          <div class="left_2">
+            <div class="about_line">
+              <span>Age:</span>
+              <span><%=user.age%></span>
+            </div>
+            <div class="about_line">
+              <span>Residence:</span>
+              <span><%=user.residence%></span>
+            </div>
+            <div class="about_line">
+              <span>Freelance:</span>
+              <span class="fravailable">Available</span>
+            </div>
+            <div class="about_line">
+              <span>Address:</span>
+              <span><%=user.adress%></span>
+            </div>
+          </div>
+          <div class="marginer"></div>
+          <div class="left_3">
+            <span class="title">Languages</span>
+            <div class="left_3_3">
+              <div class="skil_text">
+                <span>Bangla</span>
+                <span>100%</span>
+              </div>
+              <div class="line">
+                <div class="foiz foiz_1"></div>
+              </div>
+            </div>
+            <div class="left_3_3">
+              <div class="skil_text">
+                <span>English</span>
+                <span>80%</span>
+              </div>
+              <div class="line">
+                <div class="foiz foiz_2"></div>
+              </div>
+            </div>
+            <div class="left_3_3">
+              <div class="skil_text">
+                <span>Spanish</span>
+                <span>60%</span>
+              </div>
+              <div class="line">
+                <div class="foiz foiz_3"></div>
+              </div>
+            </div>
+          </div>
+          <div class="marginer"></div>
+          <div class="left_4">
+            <span class="title">Skills</span>
+            <div class="left_4_4">
+              <div class="skil_text">
+                <span>Html</span>
+                <span>90%</span>
+              </div>
+              <div class="line">
+                <div class="foiz foiz_1"></div>
+              </div>
+            </div>
+            <div class="left_4_4">
+              <div class="skil_text">
+                <span>CSS</span>
+                <span>85%</span>
+              </div>
+              <div class="line">
+                <div class="foiz foiz_2"></div>
+              </div>
+            </div>
+            <div class="left_4_4">
+              <div class="skil_text">
+                <span>Js</span>
+                <span>80%</span>
+              </div>
+              <div class="line">
+                <div class="foiz foiz_3"></div>
+              </div>
+            </div>
+            <div class="left_4_4">
+              <div class="skil_text">
+                <span>PHP</span>
+                <span>75%</span>
+              </div>
+              <div class="line">
+                <div class="foiz foiz_4"></div>
+              </div>
+            </div>
+
+            <div class="left_4_4">
+              <div class="skil_text">
+                <span>WordPress</span>
+                <span>85%</span>
+              </div>
+              <div class="line">
+                <div class="foiz foiz_5"></div>
+              </div>
+            </div>
+          </div>
+          <div class="marginer"></div>
+          <div class="left_5">
+            <span class="title">Extra Skills</span>
+            <div class="left_5_5">
+              <img src="./icon/Icons.svg" alt="aaa" />
+              <span>Bootstrap, Materialize</span>
+            </div>
+            <div class="left_5_5">
+              <img src="./icon/Icons.svg" alt="aaa" />
+              <span>Stylus, Sass, Less</span>
+            </div>
+            <div class="left_5_5">
+              <img src="./icon/Icons.svg" alt="aaa" />
+              <span>Gulp, Webpack, Grunt</span>
+            </div>
+            <div class="left_5_5">
+              <img src="./icon/Icons.svg" alt="aaa" />
+              <span>GIT Knowledge</span>
+            </div>
+          </div>
+          <div class="marginer"></div>
+          <div class="left_6">
+            <div class="download_btn">
+              <div class="btn_text">
+                <span>Download cv</span>
+                <img src="icon/Vector.svg" alt="aaa" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="midd_frame">
+          <div class="midd_block">
+            <div class="midd_left">
+              <span class="title"> Doctor neurologists in OHSU Hospital </span>
+              <span class="descr"
+                >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et,
+                volutpat feugiat placerat lobortis. Natoque rutrum semper sed
+                suspendisse nunc lectus.</span
+              >
+              <a href="#" class="btn_hireme">
+                <div>HIRE ME</div>
+                <img src="./icon/Frame.svg" alt="aaa" />
+              </a>
+            </div>
+            <div class="midd_rigt">
+              <img src="icon/daniel.svg" alt="aaa" />
+            </div>
+          </div>
+          <div class="midd_service">
+            <div class="title">My services</div>
+            <div class="aa">
+                <p class="description"
+              >Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit. lorem
+              ipsum</p>
+            </div>
+            <div class="service_block service_block_1">
+                <div class="card_">
+                    <img src="icon/coding.svg" alt="aaa">
+                    <span>Web development</span>
+                    <p>Blog, e-commerce</p>
+                </div>
+                <div class="card_">
+                    <img src="icon/illustration.svg" alt="aaa">
+                    <span>uI/uX design</span>
+                    <p>Mobile app, website design</p>
+                </div>
+                <div class="card_">
+                    <img src="icon/Microphone.png" alt="aaa">
+                    <span>Sound design</span>
+                    <p>Voice Over, Beat Making</p>
+                </div>
+            </div>
+
+            <div class="service_block service_block_2">
+                <div class="card_">
+                    <img src="icon/game-development.png" alt="aaa">
+                    <span>Game design</span>
+                    <p>Character Design, Props & Objects</p>
+                </div>
+                <div class="card_">
+                    <img src="icon/Photographer.svg" alt="aaa">
+                    <span>Photography</span>
+                    <p>portrait, product photography</p>
+                </div>
+                <div class="card_ card_1">
+                    <span>advertising</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi. </p>
+               <a href="#">
+                ORDER NOW
+               </a>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="right_frame">
+          <img src="icon/Contrast.svg" class="contrast" alt="contrast" />
+          <div class="right_icons_menu">
+            <a href="#">
+              <img src="icon/Home.svg" alt="opso" />
+            </a>
+            <a href="#">
+              <img src="icon/file-code.svg" alt="opso" />
+            </a>
+            <a href="#">
+              <img src="icon/cv.svg" alt="opso" />
+            </a>
+            <a href="#">
+              <img src="icon/blog.svg" alt="opso" />
+            </a>
+            <a href="#">
+              <img src="icon/contact.svg" alt="opso" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
