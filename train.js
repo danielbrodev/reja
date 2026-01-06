@@ -62,9 +62,9 @@ shop.sotish('non', 3) & shop.qabul('cola', 4) & shop.qoldiq() return hozir 20:50
 */
 
 class Shop {
-  constructor(nok, lagmon, cola) {
+  constructor(non, lagmon, cola) {
     this.products = {
-      nok,
+      non,
       lagmon,
       cola,
     };
@@ -77,13 +77,42 @@ class Shop {
   }
   qoldiq() {
     const time = this.getTime();
-    const { nok, lagmon, cola } = this.products;
-    return `hozir ${time}da ${non}ta non, ${lagmon}ta lagmon va ${cola}ta cola mavjud!`;
+    const { non, lagmon, cola } = this.products;
+    console.log(
+      `hozir ${time}da ${non}ta non, ${lagmon}ta lagmon va ${cola}ta cola mavjud!`
+    );
   }
-  sotish() {}
-  qabul() {}
+  sotish(product, amount) {
+    const time = this.getTime();
+
+    if (!this.products.hasOwnProperty(product)) {
+      console.log(`${product} mahsuloti mavjud emas`);
+      return;
+    }
+
+    if (this.products[product] < amount) {
+      console.log(`${time}da yetarli ${product} yo‘q`);
+      return;
+    }
+
+    this.products[product] -= amount;
+    console.log(`${time}da ${amount}ta ${product} sotildi`);
+  }
+  qabul(product, amount) {
+    const time = this.getTime();
+
+    if (!this.products.hasOwnProperty(product)) {
+      console.log(`${product} mahsuloti mavjud emas`);
+      return;
+    }
+
+    this.products[product] += amount;
+    console.log(`${time}da ${amount}ta ${product} qabul qilindi`);
+  }
 }
 
-const newShop = new Shop(2, 3, 5);
+const newShop = new Shop(5, 5, 5);
 
-// newShop.qoldiq()
+newShop.sotish("non", 3);
+newShop.qabul("cola", 5);
+newShop.qoldiq();
