@@ -36,10 +36,20 @@
           <li
             class="list-group-item d-flex justify-content-between align-items-center"
           >
-            <span><%= item.reja%></span>
+            <span class="item-text"><%= item.reja%></span>
             <div class="btn-group btn-group-sm">
-              <button data-id="<%=item._id%>" class="edit-me btn btn-outline-primary">수정</button>
-              <button data-id="<%=item._id%>" class="delete-me btn btn-outline-danger">삭제</button>
+              <button
+                data-id="<%=item._id%>"
+                class="edit-me btn btn-outline-primary"
+              >
+                수정
+              </button>
+              <button
+                data-id="<%=item._id%>"
+                class="delete-me btn btn-outline-danger"
+              >
+                삭제
+              </button>
             </div>
           </li>
 

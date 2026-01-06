@@ -33,10 +33,30 @@ app.post("/delete-item", function (req, res) {
     }
   );
 });
+app.post("/delete-all", function (req, res) {
+  if (req.body.delete_all) {
+    db.collection("plans").deleteMany(function () {
+      res.json({ success: "hammasi ochirildi" });
+    });
+  }
+});
+app.post("/edit-item", (req, res) => {
+  const data = req.body;
+  // console.log(data);
+
+  db.collection("plans").findOneAndUpdate(
+    {
+      _id: new mongodb.ObjectId(data.id),
+    },
+    { $set: { reja: data.new_input } },
+    function (err, data) {
+      res.json({ state: "success" });
+    }
+  );
+});
 
 app.get("/", function (req, res) {
   console.log("user entered /");
-
   db.collection("plans")
     .find()
     .toArray((err, data) => {
