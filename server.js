@@ -19,7 +19,7 @@ mongodb.connect(
       module.exports = client;
 
       const app = require("./app");
-      const PORT = 3000;
+      const PORT = 3012;
       const server = http.createServer(app);
       server.listen(PORT, function () {
         console.log(`Server ishga tushdi http://localhost:${PORT}`);

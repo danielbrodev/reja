@@ -117,7 +117,7 @@ shop.sotish('non', 3) & shop.qabul('cola', 4) & shop.qoldiq() return hozir 20:50
 // newShop.qoldiq();
 */
 
-// C-TASK
+// E-TASK
 /*
 Shunday function tuzing, u bitta string 
 argumentni qabul qilib osha stringni teskari 
